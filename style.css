@@ -1,3 +1,65 @@
-html{
+body{
   min-height: 100dvh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.grid-container{
+  display: flex;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 1em;
+  justify-content: center;
+  grid-template-areas: 
+  "box1 box2 box2 box3"
+  "box1 box2 b0x2 box3"
+  "box4 box5 box6 box3"
+  "box4 box7 box8 box8"
+  ;
+}
+
+
+
+.item1{
+  grid-area: box1;
+  background-color: blanchedalmond;
+}
+
+.item2{
+  grid-area: box2;
+  background-color: rgb(128, 22, 176);
+}
+
+.item2 h4 span{
+  color: yellow;
+}
+
+.item2 p{
+  color: yellow;
+}
+
+.item3{
+  grid-area: box3;
+}
+
+.item4{
+  grid-area: box4;
+}
+
+.item5{
+  grid-area: box5;
+}
+
+.item6{
+  grid-area: box6;
+}
+
+.item7{
+  grid-area: box7;
+}
+
+.item8{
+  grid-area: box8;
 }
